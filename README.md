@@ -4,8 +4,11 @@ A Simple Unix Shell: Design and implement a simple UNIX shell program using the 
 In addition to the above, the following are required:
 
 **1. Reconfigurable shell prompt (default %)**
+
 The shell must have a shell built-in command prompt for changing the current prompt. For example, type the following command
+
 % prompt john$
+
 should change the shell prompt to john$, i.e., the second token of the command.
 
 **2. The shell built-in command pwd**
