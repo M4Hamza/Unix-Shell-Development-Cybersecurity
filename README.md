@@ -3,24 +3,24 @@ A Simple Unix Shell: Design and implement a simple UNIX shell program using the 
 
 In addition to the above, the following are required:
 
-**1. Reconfigurable shell prompt (default %)**\n
+**1. Reconfigurable shell prompt (default %)**
 The shell must have a shell built-in command prompt for changing the current prompt. For example, type the following command
 % prompt john$
 should change the shell prompt to john$, i.e., the second token of the command.
 
-#2. The shell built-in command pwd
+**2. The shell built-in command pwd**
 This command prints the current directory (also known as working directory) of the shell process.
 
-#3. Directory walk
+**3. Directory walk**
 This command is similar to that provided by the Bash built-in command cd. In particular, typing the command without a path should set the current directory of the shell to the home directory of the user.
 
-#5. Wildcard characters
+**5. Wildcard characters**
 If a token contains wildcard characters * or ? the token is treated as a filename. The wildcard characters in such a token indicate to the shell that the filename must be expanded. For example the command
   % ls *.c
 may be expanded to ls ex1.c ex2.c ex3.c if there are three matching files ex1.c ex2.c ex3.c in the current directory.
 You may implement this feature using the C function glob.
 
-6. Standard input and output redirections > and <
+**6. Standard input and output redirections > and <**
 For example:
 % ls -lt > foo
 would redirect the standard output of process ls -lt to file foo. Similarly in the following command,
